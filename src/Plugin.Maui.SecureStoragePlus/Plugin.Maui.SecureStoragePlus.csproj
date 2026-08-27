@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net10.0;net10.0-android;net10.0-ios</TargetFrameworks>
+    <UseMaui>true</UseMaui>
+    <SingleProject>true</SingleProject>
+    <SkipValidateMauiImplicitPackageReferences>true</SkipValidateMauiImplicitPackageReferences>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+
+    <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">15.0</SupportedOSPlatformVersion>
+    <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
+
+    <PackageId>Plugin.Maui.SecureStoragePlus</PackageId>
+    <Title>.NET MAUI SecureStoragePlus Plugin</Title>
+    <Authors>Niladri</Authors>
+    <Company>Niladri</Company>
+    <Copyright>Copyright © Niladri and contributors</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageProjectUrl>https://github.com/NiladriPadhy/SecureStoragePlus</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/NiladriPadhy/SecureStoragePlus</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>dotnet-maui;maui;plugin;secure-storage;encryption;aes-gcm;expiry;migration;keychain;keystore;android;ios</PackageTags>
+    <Description>Better secure storage for .NET MAUI on iOS and Android, with AES-256-GCM encryption, value expiry, and migration from MAUI SecureStorage.</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageReleaseNotes>Initial release: AES-256-GCM encryption, expiry, and migration from MAUI SecureStorage.</PackageReleaseNotes>
+    <Version>1.0.0</Version>
+    <PackageVersion>1.0.0</PackageVersion>
+    <IncludeSymbols>true</IncludeSymbols>
+    <IncludeSource>true</IncludeSource>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <DebugType>portable</DebugType>
+    <PackageOutputPath>$(MSBuildThisFileDirectory)..\..\artifacts</PackageOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+    <None Include="..\..\LICENSE" Pack="true" PackagePath="\" />
+    <None Include="..\..\nuget.png" Pack="true" PackagePath="icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Plugin.Maui.SecureStoragePlus.Tests" />
+  </ItemGroup>
+
+</Project>

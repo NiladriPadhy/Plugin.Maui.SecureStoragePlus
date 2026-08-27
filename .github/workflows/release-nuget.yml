@@ -1,0 +1,37 @@
+name: Release NuGet
+
+on:
+  push:
+    tags:
+      - "v[0-9]+.[0-9]+.[0-9]+"
+      - "v[0-9]+.[0-9]+.[0-9]+-preview[0-9]+"
+
+env:
+  DOTNET_VERSION: "10.0.x"
+
+jobs:
+  release-nuget:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      - name: Install MAUI workload
+        run: dotnet workload install maui
+
+      - name: Get version from tag
+        id: version
+        run: echo "version=${GITHUB_REF_NAME#v}" >> "$GITHUB_OUTPUT"
+
+      - name: Test
+        run: dotnet test tests/Plugin.Maui.SecureStoragePlus.Tests/Plugin.Maui.SecureStoragePlus.Tests.csproj -c Release
+
+      - name: Pack
+        run: dotnet pack src/Plugin.Maui.SecureStoragePlus/Plugin.Maui.SecureStoragePlus.csproj -c Release -p:PackageVersion=${{ steps.version.outputs.version }}
+
+      - name: Push
+        run: dotnet nuget push artifacts/Plugin.Maui.SecureStoragePlus.${{ steps.version.outputs.version }}.nupkg -s https://api.nuget.org/v3/index.json -k ${{ secrets.NUGET_API_KEY }}

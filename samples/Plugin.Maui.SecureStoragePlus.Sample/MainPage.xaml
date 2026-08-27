@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Plugin.Maui.SecureStoragePlus.Sample.MainPage"
+             Title="SecureStoragePlus"
+             BackgroundColor="{AppThemeBinding Light=#F4F7F7, Dark=#102027}">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="14">
+            <Label Text="Plugin.Maui.SecureStoragePlus"
+                   FontSize="22"
+                   FontAttributes="Bold"
+                   TextColor="{AppThemeBinding Light=#0E4F52, Dark=#B6E4E0}" />
+            <Label Text="Encrypt, expire, and migrate secure values on iOS and Android."
+                   FontSize="14"
+                   TextColor="{AppThemeBinding Light=#3A5A5C, Dark=#A7C4C2}" />
+
+            <Label Text="Key" FontAttributes="Bold" />
+            <Entry x:Name="KeyEntry" Text="oauth_token" Placeholder="key" />
+
+            <Label Text="Value" FontAttributes="Bold" />
+            <Entry x:Name="ValueEntry" Text="sample-secret" Placeholder="value" />
+
+            <Label Text="Expiry" FontAttributes="Bold" />
+            <Picker x:Name="ExpiryPicker" Title="Expiry">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Never</x:String>
+                        <x:String>10 seconds</x:String>
+                        <x:String>1 minute</x:String>
+                        <x:String>1 hour</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Grid ColumnDefinitions="*,*" ColumnSpacing="10" RowDefinitions="Auto,Auto,Auto" RowSpacing="10">
+                <Button Text="Save" Clicked="OnSaveClicked" />
+                <Button Grid.Column="1" Text="Get" Clicked="OnGetClicked" />
+                <Button Grid.Row="1" Text="Remove" Clicked="OnRemoveClicked" />
+                <Button Grid.Row="1" Grid.Column="1" Text="List keys" Clicked="OnListClicked" />
+                <Button Grid.Row="2" Text="Remove expired" Clicked="OnRemoveExpiredClicked" />
+                <Button Grid.Row="2" Grid.Column="1" Text="Remove all" Clicked="OnRemoveAllClicked" />
+            </Grid>
+
+            <Label Text="Migration from MAUI SecureStorage" FontAttributes="Bold" Margin="0,8,0,0" />
+            <Label Text="Seeds a legacy SecureStorage value, then copies it into SecureStoragePlus."
+                   FontSize="13"
+                   TextColor="{AppThemeBinding Light=#3A5A5C, Dark=#A7C4C2}" />
+            <Button Text="Seed + migrate legacy_token" Clicked="OnMigrateClicked" />
+
+            <Label Text="Result" FontAttributes="Bold" Margin="0,8,0,0" />
+            <Label x:Name="StatusLabel"
+                   Text="Ready."
+                   FontSize="14"
+                   LineBreakMode="WordWrap" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

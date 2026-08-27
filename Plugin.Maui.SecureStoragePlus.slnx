@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/samples/">
+    <Project Path="samples/Plugin.Maui.SecureStoragePlus.Sample/Plugin.Maui.SecureStoragePlus.Sample.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/Plugin.Maui.SecureStoragePlus/Plugin.Maui.SecureStoragePlus.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Plugin.Maui.SecureStoragePlus.Tests/Plugin.Maui.SecureStoragePlus.Tests.csproj" />
+  </Folder>
+</Solution>
