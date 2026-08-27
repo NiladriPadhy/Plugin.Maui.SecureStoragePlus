@@ -19,16 +19,16 @@
     <Copyright>Copyright © Niladri and contributors</Copyright>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-    <PackageProjectUrl>https://github.com/NiladriPadhy/SecureStoragePlus</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/NiladriPadhy/SecureStoragePlus</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/NiladriPadhy/Plugin.Maui.SecureStoragePlus</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/NiladriPadhy/Plugin.Maui.SecureStoragePlus</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>dotnet-maui;maui;plugin;secure-storage;encryption;aes-gcm;expiry;migration;keychain;keystore;android;ios</PackageTags>
     <Description>Better secure storage for .NET MAUI on iOS and Android, with AES-256-GCM encryption, value expiry, and migration from MAUI SecureStorage.</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>icon.png</PackageIcon>
     <PackageReleaseNotes>Initial release: AES-256-GCM encryption, expiry, and migration from MAUI SecureStorage.</PackageReleaseNotes>
-    <Version>1.0.0</Version>
-    <PackageVersion>1.0.0</PackageVersion>
+    <Version>1.0.1</Version>
+    <PackageVersion>1.0.1</PackageVersion>
     <IncludeSymbols>true</IncludeSymbols>
     <IncludeSource>true</IncludeSource>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
