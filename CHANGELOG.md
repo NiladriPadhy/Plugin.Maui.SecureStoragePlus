@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2
+
+- Include the Buy Me a Coffee support section in the package README
+
 ## 1.0.0
 
 - Initial release for .NET MAUI on iOS and Android

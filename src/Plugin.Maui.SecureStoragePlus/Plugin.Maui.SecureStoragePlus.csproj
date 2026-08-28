@@ -26,9 +26,9 @@
     <Description>Better secure storage for .NET MAUI on iOS and Android, with AES-256-GCM encryption, value expiry, and migration from MAUI SecureStorage.</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>icon.png</PackageIcon>
-    <PackageReleaseNotes>Initial release: AES-256-GCM encryption, expiry, and migration from MAUI SecureStorage.</PackageReleaseNotes>
-    <Version>1.0.1</Version>
-    <PackageVersion>1.0.1</PackageVersion>
+    <PackageReleaseNotes>Include the Buy Me a Coffee support section in the package README.</PackageReleaseNotes>
+    <Version>1.0.2</Version>
+    <PackageVersion>1.0.2</PackageVersion>
     <IncludeSymbols>true</IncludeSymbols>
     <IncludeSource>true</IncludeSource>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
