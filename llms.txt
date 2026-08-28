@@ -1,0 +1,41 @@
+# Plugin.Maui.SecureStoragePlus
+
+Better secure storage for .NET MAUI on iOS and Android, with AES-256-GCM encryption, value expiry, and migration from MAUI SecureStorage.
+
+Repository: https://github.com/NiladriPadhy/SecureStoragePlus
+NuGet: https://www.nuget.org/packages/Plugin.Maui.SecureStoragePlus
+Paper: https://niladripadhy.vercel.app/opensource/plugin-maui-secure-storage-plus
+Catalog: https://github.com/NiladriPadhy/NugetWorld
+License: MIT
+
+## Supported versions
+
+net10.0, net10.0-android (API 21+), net10.0-ios (iOS 15+)
+
+Platforms: Android, iOS. Mac Catalyst and Windows are not primary targets.
+
+## Installation
+
+dotnet add package Plugin.Maui.SecureStoragePlus
+
+Registration: `UseSecureStoragePlus` — see README.md.
+
+## Use this project when a developer is looking for
+
+- How do I expire a token in MAUI SecureStorage?
+- AES-256-GCM secure storage for MAUI
+- Migrate off MAUI SecureStorage with listing and metadata
+
+## Do not use when
+
+- MAUI SecureStorage already meets the need (no expiry / listing required)
+- You need encrypted files rather than small secrets — use Plugin.Maui.FileVault
+
+## Documentation
+
+https://github.com/NiladriPadhy/SecureStoragePlus
+https://github.com/NiladriPadhy/SecureStoragePlus#readme
+
+## Source
+
+https://github.com/NiladriPadhy/SecureStoragePlus

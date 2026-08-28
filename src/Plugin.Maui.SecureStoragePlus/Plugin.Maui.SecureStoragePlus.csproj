@@ -13,7 +13,7 @@
     <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
 
     <PackageId>Plugin.Maui.SecureStoragePlus</PackageId>
-    <Title>.NET MAUI SecureStoragePlus Plugin</Title>
+    <Title>.NET MAUI SecureStoragePlus — AES-256-GCM with expiry</Title>
     <Authors>Niladri</Authors>
     <Company>Niladri</Company>
     <Copyright>Copyright © Niladri and contributors</Copyright>
@@ -22,13 +22,13 @@
     <PackageProjectUrl>https://github.com/NiladriPadhy/Plugin.Maui.SecureStoragePlus</PackageProjectUrl>
     <RepositoryUrl>https://github.com/NiladriPadhy/Plugin.Maui.SecureStoragePlus</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageTags>dotnet-maui;maui;plugin;secure-storage;encryption;aes-gcm;expiry;migration;keychain;keystore;android;ios</PackageTags>
+    <PackageTags>dotnet-maui;maui;maui-plugin;maui-utilities;cross-platform;android;ios;nuget;nugetworld;secure-storage;encryption;aes-gcm;expiry;migration;keychain;keystore</PackageTags>
     <Description>Better secure storage for .NET MAUI on iOS and Android, with AES-256-GCM encryption, value expiry, and migration from MAUI SecureStorage.</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>icon.png</PackageIcon>
-    <PackageReleaseNotes>Include the Buy Me a Coffee support section in the package README.</PackageReleaseNotes>
-    <Version>1.0.2</Version>
-    <PackageVersion>1.0.2</PackageVersion>
+    <PackageReleaseNotes>LLM-friendly README, llms.txt, AGENTS.md, and improved NuGet title/tags for coding-agent discoverability.</PackageReleaseNotes>
+    <Version>1.0.3</Version>
+    <PackageVersion>1.0.3</PackageVersion>
     <IncludeSymbols>true</IncludeSymbols>
     <IncludeSource>true</IncludeSource>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
