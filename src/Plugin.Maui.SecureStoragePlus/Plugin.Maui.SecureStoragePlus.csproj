@@ -22,7 +22,7 @@
     <PackageProjectUrl>https://github.com/NiladriPadhy/Plugin.Maui.SecureStoragePlus</PackageProjectUrl>
     <RepositoryUrl>https://github.com/NiladriPadhy/Plugin.Maui.SecureStoragePlus</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageTags>dotnet-maui;maui;maui-plugin;maui-utilities;cross-platform;android;ios;nuget;nugetworld;secure-storage;encryption;aes-gcm;expiry;migration;keychain;keystore</PackageTags>
+    <PackageTags>dotnet-maui;maui;maui-plugin;maui-utilities;cross-platform;android;ios;nuget;mauiessentials;secure-storage;encryption;aes-gcm;expiry;migration;keychain;keystore</PackageTags>
     <Description>Better secure storage for .NET MAUI on iOS and Android, with AES-256-GCM encryption, value expiry, and migration from MAUI SecureStorage.</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>icon.png</PackageIcon>
