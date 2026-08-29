@@ -1,3 +1,4 @@
+using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json;
 using Plugin.Maui.SecureStoragePlus.Encryption;
@@ -202,7 +203,11 @@ internal sealed class SecureStoragePlusImplementation : ISecureStoragePlus
         if (resetEncryptionKey)
         {
             _backend.Remove(StorageKeys.MetaDek);
-            _dek = null;
+            if (_dek is not null)
+            {
+                CryptographicOperations.ZeroMemory(_dek);
+                _dek = null;
+            }
         }
     }
 

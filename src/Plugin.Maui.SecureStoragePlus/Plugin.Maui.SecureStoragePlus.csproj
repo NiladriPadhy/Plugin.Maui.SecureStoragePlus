@@ -26,9 +26,9 @@
     <Description>Better secure storage for .NET MAUI on iOS and Android, with AES-256-GCM encryption, value expiry, and migration from MAUI SecureStorage.</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>icon.png</PackageIcon>
-    <PackageReleaseNotes>Rebrand package metadata and catalog references to MauiEssentials.</PackageReleaseNotes>
-    <Version>1.0.4</Version>
-    <PackageVersion>1.0.4</PackageVersion>
+    <PackageReleaseNotes>Reliability fixes for races, dispose/lifecycle, and lock or session correctness.</PackageReleaseNotes>
+    <Version>1.0.5</Version>
+    <PackageVersion>1.0.5</PackageVersion>
     <IncludeSymbols>true</IncludeSymbols>
     <IncludeSource>true</IncludeSource>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
