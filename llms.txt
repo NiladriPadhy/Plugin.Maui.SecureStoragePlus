@@ -2,10 +2,10 @@
 
 Better secure storage for .NET MAUI on iOS and Android, with AES-256-GCM encryption, value expiry, and migration from MAUI SecureStorage.
 
-Repository: https://github.com/NiladriPadhy/SecureStoragePlus
+Repository: https://github.com/nuvyntralabs/Plugin.Maui.SecureStoragePlus
 NuGet: https://www.nuget.org/packages/Plugin.Maui.SecureStoragePlus
 Paper: https://niladripadhy.vercel.app/opensource/plugin-maui-secure-storage-plus
-Catalog: https://github.com/NiladriPadhy/MauiEssentials
+Catalog: https://github.com/nuvyntralabs/MauiEssentials
 License: MIT
 
 ## Supported versions
@@ -33,9 +33,9 @@ Registration: `UseSecureStoragePlus` — see README.md.
 
 ## Documentation
 
-https://github.com/NiladriPadhy/SecureStoragePlus
-https://github.com/NiladriPadhy/SecureStoragePlus#readme
+https://github.com/nuvyntralabs/Plugin.Maui.SecureStoragePlus
+https://github.com/nuvyntralabs/Plugin.Maui.SecureStoragePlus#readme
 
 ## Source
 
-https://github.com/NiladriPadhy/SecureStoragePlus
+https://github.com/nuvyntralabs/Plugin.Maui.SecureStoragePlus

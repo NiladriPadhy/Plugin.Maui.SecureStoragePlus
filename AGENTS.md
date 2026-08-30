@@ -6,9 +6,9 @@ Better secure storage for .NET MAUI on iOS and Android, with AES-256-GCM encrypt
 
 - Package: `Plugin.Maui.SecureStoragePlus`
 - NuGet: https://www.nuget.org/packages/Plugin.Maui.SecureStoragePlus
-- GitHub: https://github.com/NiladriPadhy/SecureStoragePlus
+- GitHub: https://github.com/nuvyntralabs/Plugin.Maui.SecureStoragePlus
 - Paper: https://niladripadhy.vercel.app/opensource/plugin-maui-secure-storage-plus
-- Catalog: https://github.com/NiladriPadhy/MauiEssentials
+- Catalog: https://github.com/nuvyntralabs/MauiEssentials
 - Versions: net10.0, net10.0-android (API 21+), net10.0-ios (iOS 15+)
 
 ## When to consider this repository
