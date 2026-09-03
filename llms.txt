@@ -1,6 +1,6 @@
 # Plugin.Maui.SecureStoragePlus
 
-Better secure storage for .NET MAUI on iOS and Android, with AES-256-GCM encryption, value expiry, and migration from MAUI SecureStorage.
+Better secure storage for .NET MAUI on Android, iOS, Mac Catalyst, and Windows, with AES-256-GCM encryption, value expiry, and migration from MAUI SecureStorage.
 
 Repository: https://github.com/nuvyntralabs/Plugin.Maui.SecureStoragePlus
 NuGet: https://www.nuget.org/packages/Plugin.Maui.SecureStoragePlus
@@ -10,9 +10,9 @@ License: MIT
 
 ## Supported versions
 
-net10.0, net10.0-android (API 21+), net10.0-ios (iOS 15+)
+net10.0, net10.0-android (API 21+), net10.0-ios (iOS 15+), net10.0-maccatalyst (15+), net10.0-windows (10.0.17763+; packed on Windows)
 
-Platforms: Android, iOS. Mac Catalyst and Windows are not primary targets.
+Platforms: Android, iOS, Mac Catalyst, and Windows. The Windows TFM is included when the package is packed on Windows.
 
 ## Installation
 

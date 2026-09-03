@@ -1,7 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net10.0;net10.0-android;net10.0-ios</TargetFrameworks>
+    <TargetFrameworks>net10.0;net10.0-android;net10.0-ios;net10.0-maccatalyst</TargetFrameworks>
+    <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net10.0-windows10.0.19041.0</TargetFrameworks>
     <UseMaui>true</UseMaui>
     <SingleProject>true</SingleProject>
     <SkipValidateMauiImplicitPackageReferences>true</SkipValidateMauiImplicitPackageReferences>
@@ -11,6 +12,9 @@
 
     <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">15.0</SupportedOSPlatformVersion>
     <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
+    <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">15.0</SupportedOSPlatformVersion>
+    <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
+    <TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 
     <PackageId>Plugin.Maui.SecureStoragePlus</PackageId>
     <Title>.NET MAUI SecureStoragePlus — AES-256-GCM with expiry</Title>
@@ -22,13 +26,13 @@
     <PackageProjectUrl>https://nuvyntralabs.github.io/packages/plugin-maui-secure-storage-plus/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/nuvyntralabs/Plugin.Maui.SecureStoragePlus</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageTags>dotnet-maui;maui;maui-plugin;maui-utilities;cross-platform;android;ios;nuget;mauiessentials;secure-storage;encryption;aes-gcm;expiry;migration;keychain;keystore</PackageTags>
-    <Description>Better secure storage for .NET MAUI on iOS and Android, with AES-256-GCM encryption, value expiry, and migration from MAUI SecureStorage.</Description>
+    <PackageTags>dotnet-maui;maui;maui-plugin;maui-utilities;cross-platform;android;ios;maccatalyst;windows;nuget;mauiessentials;secure-storage;encryption;aes-gcm;expiry;migration;keychain;keystore</PackageTags>
+    <Description>Better secure storage for .NET MAUI on Android, iOS, Mac Catalyst, and Windows, with AES-256-GCM encryption, value expiry, and migration from MAUI SecureStorage.</Description>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>icon.png</PackageIcon>
-    <PackageReleaseNotes>Point PackageProjectUrl at the Nuvyntra Labs package page.</PackageReleaseNotes>
-    <Version>1.0.7</Version>
-    <PackageVersion>1.0.7</PackageVersion>
+    <PackageReleaseNotes>Add Mac Catalyst and Windows TFMs for the shared (non-native) implementation.</PackageReleaseNotes>
+    <Version>1.0.8</Version>
+    <PackageVersion>1.0.8</PackageVersion>
     <IncludeSymbols>true</IncludeSymbols>
     <IncludeSource>true</IncludeSource>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
